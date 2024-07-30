@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Inventory manager</h1>
+    <form id="productForm">
+      <input type="text" id="productName" placeholder="Product Name" required />
+      <input type="number" id="productPrice" placeholder="Price" required />
+      <button type="submit">Add item</button>
+    </form>
+    <form id="importForm">
+      <input type="file" id="fileInput" accept=".xlsx, .xls" />
+      <button type="submit">Import items</button>
+    </form>
+    <h2>Inventory list</h2>
+    <ul id="productList"></ul>
+    <script src="script.js"></script>
+  </body>
+</html>
